@@ -1,7 +1,7 @@
 function data(state, action) {
     switch (action.type) {
         case 'SEARCH_VIDEO':
-            
+            // action.payload.query
             return state
     
         default:

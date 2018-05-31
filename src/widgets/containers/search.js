@@ -12,7 +12,9 @@ class SearchContainer extends Component {
         // mandando al core redux
         this.props.dispatch({
             type: 'SEARCH_VIDEO',
-            payload: this.input.value
+            payload: {
+                query: this.input.value
+            }
         })
     }
     setInputRef = element => {
