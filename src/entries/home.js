@@ -3,6 +3,7 @@ import {render} from 'react-dom'
 import data from '../api.json'
 import Home from '../pages/containers/home';
 import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
 // redux ...................................................
 const initialState = {
@@ -24,4 +25,11 @@ console.log(store.getState())
 const homeContainer = document.getElementById('home-container')
 // ReactDOM.render(que voy a renderizar, donde lo hare)
 // const ms = <h1>hola mundo!!</h1>
-render(<Home data= {data}/>, homeContainer)
+render(
+<Provider store={store}>
+    <Home/>
+</Provider>,
+homeContainer
+)
+
+// render(<Home data= {data}/>, homeContainer)
