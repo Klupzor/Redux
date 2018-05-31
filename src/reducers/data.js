@@ -1,8 +1,8 @@
 function data(state, action) {
     switch (action.type) {
-        case 'jkhkj':
+        case 'SEARCH_VIDEO':
             
-            break;
+            return state
     
         default:
             return state
