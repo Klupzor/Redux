@@ -5,7 +5,9 @@ import Home from '../pages/containers/home';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './../reducers/data';
+import normalizedData from './../schemas/index';
 
+console.log(normalizedData)
 
 // redux ...................................................
 const initialState = {
